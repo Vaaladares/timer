@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+}
+
+body {
+    background-color: rgb(0, 95, 124);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.timer {
+    font-family: "Roboto Mono", monospace;
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.timer h1 {
+    font-size: 50px;
+}
+
+.relogio {
+    font-size: 50px;
+    margin: 15px 0 25px 0;
+}
+
+.iniciar, .pausar, .zerar, .continuar{
+    align-items: center;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: 1px solid rgb(20, 108, 143);
+    background-color: white;
+}
+
+.botao:hover {
+    background-color: rgb(20, 108, 143);
+    color: white;
+    transition: 0.3s;
+}
+
+.pausado {
+    color: red;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .timer {
+        width: 85%;
+        height: 400px;
+    }
+
+    .timer h1 {
+        font-size: 40px;
+    }
+    
+    .container-botoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao:nth-child(2) {
+        margin: 10px 0;
+    }
+}
